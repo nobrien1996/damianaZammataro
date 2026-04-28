@@ -1,5 +1,6 @@
 import React from "react";
-import "./css/style.css";
+import "css/style.css";
+import "js.hamburgerMenu.js";
 
 const Header = () => {
     return (
