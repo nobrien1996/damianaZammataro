@@ -18,6 +18,20 @@ const Home = () => {
                 <p className="homeText">Cosplayer</p>
             </div>
 
+            <div className="carousel">
+                <a className="carouselImage active"><img className="carouselImageIMG" src="" alt=""/></a>
+                <a className="carouselImage"><img className="carouselImageIMG" src="" alt=""/></a>
+                <a className="carouselImage"><img className="carouselImageIMG" src="" alt=""/></a>
+                <a className="carouselImage"><img className="carouselImageIMG" src="" alt=""/></a>
+                <a className="carouselImage"><img className="carouselImageIMG" src="" alt=""/></a>
+                <a className="carouselImage"><img className="carouselImageIMG" src="" alt=""/></a>
+    
+                <br />
+
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+
             {/*Page footer*/}
             <div>
                 <Footer />
