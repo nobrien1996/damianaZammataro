@@ -3,7 +3,7 @@ import Header from "./header-footer/Header";
 
 const Home = () => {
     return (
-        <body>
+        <div>
             {/*Page header*/}
             <div>
                 <Header />
@@ -23,7 +23,7 @@ const Home = () => {
                 <Footer />
             </div>
 
-        </body>
+        </div>
     );
 };
 

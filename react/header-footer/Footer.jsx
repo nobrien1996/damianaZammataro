@@ -15,7 +15,7 @@ const Footer = () => {
                 </ul>
 
             {/*Copyright*/}
-            <div>
+            <div className="copyright">
                 <p>Copyright © 2026</p>
             </div>
 
