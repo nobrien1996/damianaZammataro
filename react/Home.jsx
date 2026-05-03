@@ -10,8 +10,12 @@ const Home = () => {
             </div>
 
             {/*Page body*/}
-            <div>
-
+            <div className="homeBlock">
+                <p className="homeText">Model</p>
+                <p className="homeText">-</p>
+                <p className="homeText">Storyteller</p>
+                <p className="homeText">-</p>
+                <p className="homeText">Cosplayer</p>
             </div>
 
             {/*Page footer*/}

@@ -138,3 +138,22 @@ header {
     height: 32px;
     width: 32px;
 }
+
+
+/*Home*/
+
+.homeBlock {
+    padding: 40px 10px;
+}
+
+.homeText {
+    justify-content: space-between;
+    color: #3F3A3a;
+}
+
+@media (min-width: 768px) {
+    .homeText {
+        flex-direction: column;
+        align-items: center;
+    }
+}
