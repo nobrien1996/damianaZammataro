@@ -20,8 +20,13 @@ const Footer = () => {
             </div>
 
             {/*Social medias*/}
-            <div>
-
+            <div className="footerSocial">
+                <a className="footer-social" href="https://www.instagram.com/the_ring_the_wand_the_throne/">
+                    <img className="footer-social-img" src="images/social-media-icons/IG-logo-bw.webp" alt="Instagram logo"/>
+                </a>
+                <a className="footer-social" href="https://www.tiktok.com/@the_ringthewandthethrone?_r=1&_t=ZP-962dt9JmcRi">
+                    <img className="footer-social-img" src="images/social-media-icons/tt-logo-bw.png" alt="TokTok logo"/>
+                </a>
             </div>
         </footer>
     );

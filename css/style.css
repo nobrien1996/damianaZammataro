@@ -97,3 +97,44 @@ header {
         left: 0;
     }
 }
+
+
+/*Footer*/
+
+/*Footer pages*/
+
+.footerMenu {
+    justify-content: left;
+    padding: 20px;
+}
+
+.footer-item {
+    list-style: none;
+}
+
+.footer-links {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: #AD6666;
+    transform: scale(1.1);
+}
+
+/*Footer socials*/
+
+.footerSocial {
+    justify-content: right;
+    padding: 20px;
+}
+
+.footer-social:hover {
+    padding: 0 10px;
+    transform: scale(1.1);
+}
+
+.footer-social-img {
+    height: 32px;
+    width: 32px;
+}
