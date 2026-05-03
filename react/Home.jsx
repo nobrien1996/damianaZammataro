@@ -18,6 +18,9 @@ const Home = () => {
                 <p className="homeText">Cosplayer</p>
             </div>
 
+            <br />
+            <br />
+
             <div className="carousel">
                 <a className="carouselImage active"><img className="carouselImageIMG" src="" alt=""/></a>
                 <a className="carouselImage"><img className="carouselImageIMG" src="" alt=""/></a>
