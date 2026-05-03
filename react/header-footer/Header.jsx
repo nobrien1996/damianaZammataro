@@ -1,6 +1,10 @@
 import React from "react";
-import "css/style.css";
-import "js/hamburgerMenu.js";
+import "../../css/style.css";
+import "../../js/hamburgerMenu.js";
+import Home from "../Home.jsx";
+import About from "../side-pages/About.jsx"
+import Portfolio from "../side-pages/Portfolio.jsx";
+import Contact from "../side-pages/Contact.jsx";
 
 const Header = () => {
     return (
@@ -10,10 +14,10 @@ const Header = () => {
                 <a href="#" class="nav-name">Damiana Zammataro</a>
                 {/*Nav Menu*/}
                 <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links" href="#">Home</a></li>
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links" href="#">About</a></li>
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links" href="#">Portfolio</a></li>
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links" href="#">Contact</a></li>
+                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">Home</a></li>
+                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">About</a></li>
+                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">Portfolio</a></li>
+                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">Contact</a></li>
                 </ul>
                 {/*Hamburger Icon Trigger*/}
                 <div class="hamburger" id="hamburger">
