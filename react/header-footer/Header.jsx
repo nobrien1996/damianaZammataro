@@ -1,33 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../css/style.css";
-import "../../js/hamburgerMenu.js";
-import Home from "../Home.jsx";
-import About from "../side-pages/About.jsx"
-import Portfolio from "../side-pages/Portfolio.jsx";
-import Contact from "../side-pages/Contact.jsx";
 
 const Header = () => {
-    return (
-        <header>
-            <h1>Damiana Zammataro</h1>
-            <nav class="navbar">
-                <a href="#" class="nav-name">Damiana Zammataro</a>
-                {/*Nav Menu*/}
-                <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">Home</a></li>
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">About</a></li>
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">Portfolio</a></li>
-                    <li class="nav-item" id="nav-item"><a class="nav-links" id="nav-links">Contact</a></li>
-                </ul>
-                {/*Hamburger Icon Trigger*/}
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
+    const [isActive, setIsActive] = useState(false);
+    
+        const toggleMenu = () => setIsActive(prev => !prev);
+        const closeMenu = () => setIsActive(false);
+    
+        return (
+            <header>
+                <nav className="navbar">
+                    <Link to="/" className="nav-name" onClick={closeMenu}>Damiana Zammataro</Link>
+    
+                    <ul className={`nav-menu${isActive ? " active" : ""}`}>
+                        <li className="nav-item"><Link className="nav-links nav-link" to="/" onClick={closeMenu}>Home</Link></li>
+                        <li className="nav-item"><Link className="nav-links nav-link" to="/about" onClick={closeMenu}>About</Link></li>
+                        <li className="nav-item"><Link className="nav-links nav-link" to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
+                        <li className="nav-item"><Link className="nav-links nav-link" to="/contact" onClick={closeMenu}>Contact</Link></li>
+                    </ul>
+    
+                    <div className={`hamburger${isActive ? " active" : ""}`} onClick={toggleMenu}>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </div>
+                </nav>
+            </header>
     );
 };
 

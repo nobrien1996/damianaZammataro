@@ -10,12 +10,12 @@ const Footer = () => {
         <footer>
 
             {/*Pages*/}
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/" element={<Home />} />
-                </Routes>
-            </BrowserRouter>
+                <ul className="footerMenu">
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/" onClick={}>Home</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/about" onClick={}>About</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/portfolio" onClick={}>Portfolio</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/contact" onClick={}>Contact</Link></li>
+                </ul>
 
             {/*Copyright*/}
             <div>
