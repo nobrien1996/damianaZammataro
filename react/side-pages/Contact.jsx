@@ -6,17 +6,18 @@ import "../../css/style.css";
 
 const Contact = () => {
     const formRef = useRef();
-    const [status, setStatus] = useState(null); // null | "sending" | "success" | "error"
+    const [status, setStatus] = useState(null); // null - "sending" - "success" - "error"
     const [errors, setErrors] = useState({});
 
     const validate = (fields) => {
         const newErrors = {};
-        if (!fields.name.trim()) newErrors.name = "Name is required.";
-        if (!fields.subject.trim()) newErrors.subject = "Subject is required.";
+        if (!fields.name.trim()) newErrors.name = "Name is required";
+        if (!fields.subject.trim()) newErrors.subject = "Subject is required";
+        if (!fields.message.trim()) newErrors.message = "Message is required";
         if (!fields.email.trim()) {
-            newErrors.email = "Email is required.";
+            newErrors.email = "Email is required";
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)) {
-            newErrors.email = "Please enter a valid email address.";
+            newErrors.email = "Please enter a valid email address";
         }
         return newErrors;
     };
@@ -113,8 +114,10 @@ const Contact = () => {
                             id="message"
                             name="message"
                             rows="5"
-                            placeholder="Your message (optional)"
+                            placeholder="Your message"
+                            className={errors.message ? "input-error" : ""}
                         />
+                        {errors.message && <span className="error-msg">{errors.message}</span>}
                     </div>
 
                     <button
@@ -129,7 +132,7 @@ const Contact = () => {
                         <p className="form-status success">Your message was sent successfully!</p>
                     )}
                     {status === "error" && (
-                        <p className="form-status error">Something went wrong. Please try again.</p>
+                        <p className="form-status error">Something went wrong. Please try again</p>
                     )}
                 </form>
             </div>
