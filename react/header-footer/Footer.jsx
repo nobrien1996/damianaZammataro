@@ -1,8 +1,5 @@
 import React from "react";
-import Home from "../Home.jsx";
-import About from "../side-pages/About.jsx";
-import Portfolio from "../side-pages/Portfolio.jsx";
-import Contact from "../side-pages/Contact.jsx";
+import { Link } from "react-router-dom";
 import "../../css/style.css";
 
 const Footer = () => {
@@ -11,10 +8,10 @@ const Footer = () => {
 
             {/*Pages*/}
                 <ul className="footerMenu">
-                    <li className="footer-item"><Link className="footer-links footer-link" to="/" onClick={}>Home</Link></li>
-                    <li className="footer-item"><Link className="footer-links footer-link" to="/about" onClick={}>About</Link></li>
-                    <li className="footer-item"><Link className="footer-links footer-link" to="/portfolio" onClick={}>Portfolio</Link></li>
-                    <li className="footer-item"><Link className="footer-links footer-link" to="/contact" onClick={}>Contact</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/">Home</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/about">About</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/portfolio">Portfolio</Link></li>
+                    <li className="footer-item"><Link className="footer-links footer-link" to="/contact">Contact</Link></li>
                 </ul>
 
             {/*Copyright*/}
