@@ -14,6 +14,11 @@ header {
 .nav-item {
     list-style: none;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    color: #AD6666;
 }
 
 .nav-links {
@@ -30,8 +35,12 @@ header {
 }
 
 .nav-name {
-    color: #AD6666;
+    color: aliceblue;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.nav-name:hover {
+    color: #AD6666;
 }
 
 .nav-menu {
@@ -107,16 +116,28 @@ header {
 
 /*Footer*/
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3F3A3a;
+    padding: 20px 24px;
+}
+
 /*Footer pages*/
 
 .footerMenu {
-    justify-content: left;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    align-items: flex-start;
 }
 
 .footer-item {
     list-style: none;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
 }
 
 .footer-links {
@@ -129,11 +150,21 @@ header {
     transform: scale(1.1);
 }
 
+/*Footer copyright*/
+
+.copyright {
+    flex: 1;
+    text-align: center;
+    color: aliceblue;
+}
+
 /*Footer socials*/
 
 .footerSocial {
-    justify-content: right;
-    padding: 20px;
+    display: flex;
+    gap: 12px;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .footer-social:hover {
