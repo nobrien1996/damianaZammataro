@@ -37,6 +37,7 @@ header {
 .nav-name {
     color: aliceblue;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 40px;
 }
 
 .nav-name:hover {
@@ -128,7 +129,8 @@ footer {
 
 .footerMenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 6px;
     flex: 1;
     align-items: flex-start;
@@ -145,7 +147,7 @@ footer {
     text-decoration: none;
 }
 
-.nav-links:hover {
+.footer-links:hover {
     color: #AD6666;
     transform: scale(1.1);
 }
