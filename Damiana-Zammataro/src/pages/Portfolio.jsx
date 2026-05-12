@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../components/header-footer/Header.jsx";
+import InstagramFeed from "../components/APIs/IG-api.jsx";
+import TikTokProfile from "../components/APIs/TT-api.jsx";
 import Footer from "../components/header-footer/Footer.jsx";
 
 const Portfolio = () => {
@@ -9,6 +11,17 @@ const Portfolio = () => {
             {/*Page header*/}
             <div>
                 <Header />
+            </div>
+
+            {/*IG & TT APIs*/}
+            <div className="socials-apis">
+                <div>
+                    <InstagramFeed />
+                </div>
+
+                <div>
+                    <TikTokProfile />
+                </div>
             </div>
 
             {/*Page content*/}
