@@ -191,7 +191,7 @@ footer {
 /*Home*/
 
 .homeBlock {
-    padding: 40px 10px;
+    padding: 40px 40px;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     display: flex;
     flex-direction: row;
@@ -204,8 +204,7 @@ footer {
     align-items: center;
     color: #3F3A3a;
     font-size: larger;
-    flex-basis: 20%;
-    font-weight: 600;
+    position: relative;
 }
 
 .carousel {

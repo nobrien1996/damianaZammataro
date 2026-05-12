@@ -12,11 +12,11 @@ const Home = () => {
 
             {/*Page body*/}
             <div className="homeBlock">
-                <p className="homeText">Model</p>
-                <p className="homeText">-</p>
-                <p className="homeText">Storyteller</p>
-                <p className="homeText">-</p>
-                <p className="homeText">Cosplayer</p>
+                <p className="homeText"><strong>Model</strong></p>
+                <p className="homeText"><strong>-</strong></p>
+                <p className="homeText"><strong>Storyteller</strong></p>
+                <p className="homeText"><strong>-</strong></p>
+                <p className="homeText"><strong>Cosplayer</strong></p>
             </div>
 
             <br />
