@@ -37,7 +37,7 @@ const Home = () => {
             </div>
 
             {/*Page footer*/}
-            <div>
+            <div className="pages-footer">
                 <Footer />
             </div>
         </div>
