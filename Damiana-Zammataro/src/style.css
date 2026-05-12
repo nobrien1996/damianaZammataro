@@ -412,3 +412,22 @@ footer {
     color: #AD6666;
 }
 
+
+/*Portfolio*/
+
+.socials-apis {
+    padding: 40px 40px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 100px;
+}
+
+.ig-api {
+    max-width: 500px;
+}
+
+.tt-api {
+    max-width: 500px;
+}

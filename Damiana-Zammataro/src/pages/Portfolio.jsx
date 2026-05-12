@@ -15,11 +15,11 @@ const Portfolio = () => {
 
             {/*IG & TT APIs*/}
             <div className="socials-apis">
-                <div>
+                <div className="ig-api">
                     <InstagramFeed />
                 </div>
 
-                <div>
+                <div className="tt-api">
                     <TikTokProfile />
                 </div>
             </div>
